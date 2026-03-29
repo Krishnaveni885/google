@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #202124;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px;
+            gap: 20px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+        }
+
+        .logo {
+            font-size: 70px;
+            font-weight: 500;
+            color: #8ab4f8;
+        }
+
+        .search-box {
+            margin-top: 25px;
+            width: 90%;
+            max-width: 600px;
+            background: #303134;
+            border-radius: 30px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-box input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            background: #303134;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttons button:hover {
+            border: 1px solid #5f6368;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #171717;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        footer div {
+            display: flex;
+            gap: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 50px;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <a href="#">Gmail</a>
+    <a href="#">Images</a>
+</div>
+
+<div class="main">
+    <div class="logo">Google</div>
+
+    <div class="search-box">
+        🔍
+        <input type="text" placeholder="Search Google or type a URL">
+        🎤
+    </div>
+
+    <div class="buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+</div>
+
+<footer>
+    <div>
+        <span>India</span>
+    </div>
+
+    <div>
+        <span>About</span>
+        <span>Privacy</span>
+        <span>Terms</span>
+    </div>
+</footer>
+
+</body>
+</html>
